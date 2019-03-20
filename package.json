@@ -1,0 +1,16 @@
+{
+  "name": "react-code-quality-tools",
+  "version": "1.0.0",
+  "description": "React Code Quality Tools  ",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck index.md",
+    "build": "mdx-deck build index.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Youssouf EL Azizi",
+  "license": "ISC",
+  "dependencies": {
+    "mdx-deck": "^1.8.2"
+  }
+}

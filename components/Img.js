@@ -1,3 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export default ({ src }) => <img src={src} style={{ height: "70%" }} />;
+export default ({src}) => {
+  const file = 'jshdsq';
+  return <img src={src} style={{height: '70%'}} />;
+};

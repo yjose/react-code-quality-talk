@@ -114,6 +114,7 @@ const vscode = `
 ## Code Quality
 
 High quality, familiar, consistent code is easier to read and understand.
+Code similar to your own is easier for you to understand.
 
 ---
 
@@ -131,7 +132,7 @@ High quality, familiar, consistent code is easier to read and understand.
       <h3>CI Tools </h3>
     </li>
     <li>
-      <h3>Monitoring Tools </h3>
+      <h3>Error Tracking Tools </h3>
     </li>
   </Appear>
 </ul>
@@ -355,6 +356,8 @@ import preEsCode from "raw-loader!./files/eslint-prettier.js";
 
 ## GiT Hooks
 
+commands that run when we call specific Git actions.
+
 ---
 
 ## So, what we need to check in a commit?
@@ -378,7 +381,7 @@ import preEsCode from "raw-loader!./files/eslint-prettier.js";
 
 ## Husky
 
-🐕 Husky makes it easier for us to write Git Hooks - commands that run when we call specific Git actions.
+🐕 Husky makes it easier for us to write Git Hooks.
 
 `Husky basically transforms GIT hooks into npm scripts)`
 
@@ -391,9 +394,8 @@ import preEsCode from "raw-loader!./files/eslint-prettier.js";
 {
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test",
-      "...": "..."
+      "pre-commit": "npm test", // lint
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
     }
   }
 }
@@ -409,3 +411,17 @@ import preEsCode from "raw-loader!./files/eslint-prettier.js";
 ## use Netlify for preview
 
 ---
+
+import ErrorButton from "./components/Button";
+
+## use Sentr to Track Errors
+
+<ErrorButton />
+
+---
+
+## Demo && Showcase
+
+---
+
+## 🙏 Thank You 🙏

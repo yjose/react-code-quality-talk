@@ -4,8 +4,8 @@
   "description": "React Code Quality Tools  ",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck index.mdx",
-    "build": "mdx-deck build index.mdx",
+    "start": "mdx-deck index.mdx ",
+    "build": "mdx-deck build --no-html  index.mdx",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": " eslint  ./components/*.js --fix"
   },

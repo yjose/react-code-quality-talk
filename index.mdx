@@ -17,6 +17,26 @@ const vscode = `
 }
 `;
 
+import { Head } from "mdx-deck";
+
+<Head>
+  <title>Improving React Code Quality with the Right Tools</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jxnblk" />
+  <meta
+    name="twitter:title"
+    content="Improving React Code Quality with the Right Tools"
+  />
+  <meta
+    name="twitter:description"
+    content="Improving React Code Quality with the Right Tools"
+  />
+  <meta
+    name="twitter:image"
+    content="https://github.com/yjose/react-code-quality-talk/blob/master/assets/talk-preview.png?raw=true"
+  />
+</Head>
+
 ## 🛠🛠
 
 <h1> Improving React Code Quality with the Right Tools </h1>
@@ -407,23 +427,39 @@ commands that run when we call specific Git actions.
 
 ---
 
-## code review , Why is important ?
-
----
-
 ## use Netlify for preview
 
 ---
 
 import ErrorButton from "./components/Button";
 
-## use Sentr to Track Errors
+## use Sentry to Track Errors
+
+`yarn add @sentry/browser`
+
+```js
+import * as Sentry from "@sentry/browser";
+
+const RELEASE = "0.1.0";
+if (process.env.NODE_ENV === "production") {
+  Sentry.init({
+    dsn: "https://7eedc8c4e38a4f64bd49283754b5ba63@sentry.io/1421776",
+    release: RELEASE
+  });
+}
+```
 
 <ErrorButton />
 
 ---
 
-## Demo && Showcase
+## Demo
+
+👇👇👇👇👇
+
+<br />
+
+[https://github.com/yjose/react-code-quality-talk](https://github.com/yjose/react-code-quality-talk)
 
 ---
 
